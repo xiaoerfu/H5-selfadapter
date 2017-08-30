@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>更多</title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/more.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<script src="js/adpter.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body id="more">
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="title">更多</h1>
+		</header>
+		<div id="one">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="alarm.html"><img src="images/more/alarm_clock.png" align="absmiddle"/>&nbsp;&nbsp;打卡闹钟</a>
+				</li>
+			</ul>
+		</div>
+		<div id="two">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right"><img src="images/more/change_cellphone.png" align="absmiddle"/>&nbsp;&nbsp;更换手机号</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="updatepassword.html"><img src="images/more/update_password.png" align="absmiddle"/>&nbsp;&nbsp;修改密码</a>
+				</li>
+				<li class="mui-table-view-cell" >
+					<div id=" trajectory ">
+						<img src="images/more/track.png" align="absmiddle"/>&nbsp;&nbsp;轨迹监控
+						<input class="our_switch" type="checkbox">
+			       </div>
+				</li>
+			</ul>
+		</div>
+		<div id="three">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" id="share"><img src="images/more/share.png" align="absmiddle"/>&nbsp;&nbsp;分享</a>
+				</li>
+			</ul>
+		</div>
+		<div id="four">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="help.html"><img src="images/more/help.png" align="absmiddle"/>&nbsp;&nbsp;使用帮助</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="feedback.html"><img src="images/more/Feedback.png" align="absmiddle"/>&nbsp;&nbsp;意见反馈</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right"><img src="images/more/check_update.png" align="absmiddle"/>&nbsp;&nbsp;检查更新</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right"><img src="images/more/about.png" align="absmiddle"/>&nbsp;&nbsp;关于</a>
+				</li>
+			</ul>
+		</div>
+		<div id="out">
+			<button id="button1">注销账户</button>
+		</div>
+
+		<!-- 弹窗 -->
+		<div id="myModal" class="modal">
+
+			<!-- 弹窗内容 -->
+			<div class="modal-content">
+				<p style="text-align: center; font-size: 0.4rem; font-weight: bold; color: #000000; margin-top: 5px;">
+					——分享生活 留住感动——
+				</p>
+				<div id="share_icon">
+					<ul>
+						<li>
+							<a href="#"><img src="images/share/sina_blog.png" /><br/>新浪微博</a>
+						</li>
+						<li>
+							<a href="#"><img src="images/share/qqZone.png" /><br/>qq空间</a>
+						</li>
+						<li>
+							<a href="index.html"><img src="images/share/weChat.png" /><br/>微信朋友圈</a>
+						</li>
+					</ul>
+				</div>
+				<div class="two-bar-codes ">
+					<img id="code" src="images/two_code.png" />
+				</div>
+				<div class="cancel">
+					<button id="remove">取消</button>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			// 获取弹窗
+			var modal = document.getElementById('myModal');
+
+			// 打开弹窗的按钮对象
+			var btn = document.getElementById("share");
+
+			// 获取 remove 元素，用于关闭弹窗
+			var remove = document.getElementById('remove');
+
+			// 点击按钮打开弹窗
+			btn.onclick = function() {
+				modal.style.display = "block";
+				console.log("你点击了弹框按钮")
+			}
+
+			// 点击 取消按钮, 关闭弹窗
+			remove.onclick = function() {
+				modal.style.display = "none";
+				console.log("你点击了取消关闭按钮")
+			}
+
+			// 在用户点击其他地方时，关闭弹窗
+			window.onclick = function(event) {
+				if(event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
+		<script type="text/javascript">
+			/*			document.getElementById("more").addEventListener("click", myFunction);
+						function myFunction() {
+						window.navigate("more.html");
+						}*/
+			/*返回指定的界面*/
+			pushHistory();
+			window.addEventListener("popstate", function(e) {
+				window.location = 'main.html';
+			}, false);
+
+			function pushHistory() {
+				var state = {
+					title: "更多",
+					url: "more.html"
+				};
+				window.history.pushState(state, "更多", "more.html");
+			}
+		</script>
+	</body>
+
+</html>

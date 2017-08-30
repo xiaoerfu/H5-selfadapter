@@ -1,0 +1,81 @@
+img{
+	width: 0.3rem;
+	height: 0.3rem;
+}
+
+.left img{
+	position: relative;
+	margin-top: 0.2rem;
+	float: left;
+}
+
+header .title{
+	position: relative;
+	float: left;
+	margin-left: 1.9rem;
+	margin-top: 0.25rem;
+	font-size: 0.35rem;
+	line-height: 0.2rem;
+	text-align: center;
+	color: #323232;
+}
+
+.content {
+	position: relative;
+	height: 1rem;
+	margin-top: 1rem;
+	list-style: none;
+	background: #FFFFFF;
+}
+
+p{
+	float: left;
+	font-size: 0.25rem;
+	margin-top: 0.1rem;
+	line-height: 0.4rem;  /*设置行高*/
+}
+
+.content .switch .our_switch {
+	margin-top: 0.3rem;
+	float: right;
+	width: 0.7rem;
+	height: 0.4rem;
+	position: relative;
+	border: 1px solid #dfdfdf;
+	background-color: #fdfdfd;
+	box-shadow: #dfdfdf 0 0 0 0 inset;
+	border-radius: 0.2rem;
+	background-clip: content-box;
+	display: inline-block;
+	-ms-progress-appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	outline: none;
+}
+
+.content .switch .our_switch:before {
+	content: '';
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	border-radius: 0.2rem;
+	background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.content .switch .our_switch:checked {
+	border-color: #64bd63;
+	box-shadow: #64bd63 0 0 0 0.1rem inset;
+	background-color: #64bd63;
+}
+
+.content .switch .our_switch:checked:before {
+	left: 0.3rem;
+}

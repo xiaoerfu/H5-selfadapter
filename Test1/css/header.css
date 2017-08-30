@@ -1,0 +1,59 @@
+* {
+	-webkit-user-select: none;
+	-ms-touch-select: none;
+/*
+	-ms-touch-action: none;
+*/
+}
+html {
+
+	font-size:100px;
+	
+}
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: Arial;
+	font-size: 0.1rem;
+	color: #6c6c6c;
+	-webkit-touch-callout:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-text-size-adjust:none;
+}
+header {
+	width: 100%;
+	height: 0.6rem;
+	top: 0;
+	left: 0;
+	font-size: 0.1rem;
+	/*line-height: 0.44rem;*/
+	background: -ms-linear-gradient(top,#18b170,#18b170);
+	background: -webkit-linear-gradient(top,#18b170,#18b170);
+	z-index: 20;
+	/*border-bottom: 1px solid rgba(215,75,40,0.8);*/
+	-ms-touch-action: none;
+	position: absolute;
+}
+
+/*placeholder字体颜色*/
+::-webkit-input-placeholder { /* WebKit browsers */
+	font-size: 0.25rem;
+    color:#ccc;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	font-size: 0.25rem;
+    color:#ccc;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	font-size: 0.25rem;
+    color:#ccc;
+    opacity:1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+	font-size: 0.25rem;
+    color:#ccc;
+    !important;
+}

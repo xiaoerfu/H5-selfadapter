@@ -1,0 +1,163 @@
+{
+  "addalarm.html": {
+    "href": "addalarm.html",
+    "resources": [
+      "css/mui.css",
+      "css/mui.min.css",
+      "css/header.css",
+      "css/addalarm.css",
+      "images/ó.png"
+    ],
+    "refer": [
+      "alarm.html"
+    ],
+    "priority": 0
+  },
+  "alarm.html": {
+    "href": "alarm.html",
+    "resources": [
+      "css/mui.css",
+      "css/mui.min.css",
+      "css/header.css",
+      "css/alarm.css",
+      "images/û þ.png"
+    ],
+    "refer": [
+      "more.html",
+      "addalarm.html"
+    ],
+    "priority": 0
+  },
+  "updatepassword.html": {
+    "href": "updatepassword.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/header.css",
+      "css/updatepassword.css"
+    ],
+    "refer": [
+      "more.html"
+    ],
+    "priority": 0
+  },
+  "help.html": {
+    "href": "help.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/header.css"
+    ],
+    "refer": [
+      "more.html"
+    ],
+    "priority": 0
+  },
+  "feedback.html": {
+    "href": "feedback.html",
+    "resources": [
+      "css/mui.css",
+      "css/mui.min.css",
+      "css/header.css"
+    ],
+    "refer": [
+      "more.html"
+    ],
+    "priority": 0
+  },
+  "newTask.html": {
+    "href": "newTask.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/header.css",
+      "css/newTask.css",
+      "images/ó.png"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "requestService.html": {
+    "href": "requestService.html",
+    "resources": [
+      "css/mui.min.css",
+      "css/header.css",
+      "css/requestService.css",
+      "js/mui.min.js",
+      "images/ó
+Ò[	.png",
+      "images/û þ.png"
+    ],
+    "refer": [
+      "newTask.html"
+    ],
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/header.css",
+      "css/index.css",
+      "images/demo1.jpg"
+    ],
+    "refer": [
+      "main.html",
+      "requestService.html"
+    ],
+    "priority": 0
+  },
+  "more.html": {
+    "href": "more.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/more.css",
+      "images/more/hù.png",
+      "images/share/two-code.jpg",
+      "images/more/ùŸ.png",
+      "images/more/ôbK:÷.png",
+      "images/more/î9Æ.png",
+      "images/more/«.png",
+      "images/more/(.©.png",
+      "images/more/ÁÍˆ.png",
+      "images/more/Àåô°.png",
+      "images/more/sŽ.png",
+      "images/share/°j®Z.png",
+      "images/share/qqzô.png",
+      "images/share/®áË.png"
+    ],
+    "refer": [
+      "alarm.html",
+      "updatepassword.html",
+      "help.html",
+      "feedback.html",
+      "index.html"
+    ],
+    "priority": 0
+  },
+  "main.html": {
+    "href": "main.html",
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "css/header.css",
+      "css/main.css",
+      "images/4Ï.png",
+      "images/ô.png",
+      "images/.png",
+      "images/ÝY.png",
+      "images/öô.png",
+      "images/°U.png",
+      "images/å\.png",
+      "images/šM.png",
+      "images/”(.png"
+    ],
+    "refer": [
+      "more.html",
+      "index.html"
+    ],
+    "priority": 0
+  }
+}
